@@ -1,0 +1,73 @@
+<!-----------------------------------------------------------------------------
+-- Author: Tim Glew
+-- Description: Resume Page
+------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charet="utf-8">
+		
+		<!-- Responsive viewport meta tag required for Bootstrap -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- For font awesome icons --> 
+		<script src="https://kit.fontawesome.com/c5948be3ad.js" crossorigin="anonymous"></script>
+
+		<title>Tim Glew - Resume</title>
+
+		<!-- Bootstrap CDN -->  
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="./static/css/style.css">
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<!-----------------------------------------------------------------------------
+		-- Section: Header and Nav Bar
+		------------------------------------------------------------------------------->
+		<div id="pageHeader">
+			<div id="nameHeader">
+				Tim Glew
+			</div>
+
+			<div id="navBar">
+				<a class="navLink" href="./index.html">Home</a>
+				<a class="navLink" href="./projects.html">Projects</a>
+				<a class="navLink" href="./resume.html">Resume</a>
+			</div>
+		</div>
+
+		<!-- Page Content -->  
+		<div id="mainDiv">
+			<!-----------------------------------------------------------------------------
+            -- Section: Resume Picture and Download Button
+            ------------------------------------------------------------------------------->
+            <!--Download on click adapted from stack overflow discussion at: "https://stackoverflow.com/questions/11620698/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript" -->
+            <!--Button adapted from Bootstrap documentation at: "https://getbootstrap.com/docs/4.0/components/buttons/" -->
+            <button type="button" id="resumeButton" onclick="window.open('./static/resume.pdf')" class="btn btn-primary btn-lg btn-block"><i class="fas fa-download"></i> Download</button>
+
+            <div>
+                <img src="./static/resumePic.jpg" id="resumePic">  
+            </div>
+		</div>
+
+		<!-- Scripts to enable Bootsrap functionality  --> 
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+		<!-- My scripts --> 
+		<script src="./static/scripts.js"></script>
+	</body>
+</html>
+
+
+
+
+
+

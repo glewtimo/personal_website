@@ -1,0 +1,135 @@
+/*******************************************************************************
+** Author: Tim Glew
+** Description: CSS Styling for Personal Webpage Project
+** Course: CS290-400
+*******************************************************************************/
+
+/*******************************************************************************
+** Section: General Styling
+*******************************************************************************/
+body {
+	margin: 3% 20% 3% 20%;
+	padding: 2% 4% 2% 4%;
+
+	border: .08em solid black;
+	font-family: 'Nunito', sans-serif;
+	background-color: #edfcfc;
+}
+
+
+/*******************************************************************************
+** Section: Page Header/Navigation Bar Styling
+*******************************************************************************/
+/* Nav bar and name header */
+#pageHeader {
+	text-align: center;
+}
+
+/* Name across the top of the header */
+#nameHeader {
+	letter-spacing: .1em;
+	font-size: 200%;
+	margin-bottom: .5em;
+}
+
+/* Navigation links */
+#navBar {
+	padding-bottom: 1.5em;
+	margin-bottom: 2em;
+	border-bottom: .05em solid grey;
+}
+
+/* Styling for the nav bar links. */
+.navLink {
+	color: grey;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	padding-right: 1.3em;
+	padding-left: 1.3em;
+}
+
+/* Stlying for the active nav bar link */
+.activeLink {
+	color: black;
+	font-weight: 700;
+}
+
+/*******************************************************************************
+** Section: Home Page
+*******************************************************************************/
+/* Carousel images*/
+.carousel-item {
+	max-width: 100%;
+	height: 10%;
+}
+
+#aboutMe {
+	margin-top: 1.5em;
+}
+
+
+/* Remaining styling in this section related to icons at the bottom of the page */
+#contactIcons {
+	text-align: center;
+}
+
+.fa-linkedin {
+	color: #2867B2;
+}
+
+.fa-github-square {
+	color: #333;
+}
+
+.fa-envelope-square {
+	color: #B23121;
+}
+
+
+/*******************************************************************************
+** Section: Projects Page
+*******************************************************************************/
+.card {
+	border: .05em solid grey;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.card-body {
+	background-color: #edfcfc;
+}
+
+.card-title {
+	border-bottom: .05em solid grey;
+}
+
+.projectButton {
+	text-align: center;
+}
+
+.btn-primary {
+	background-color: #1a50a1;
+}
+
+#libTitle{
+	font-size: 1.1em;
+}
+
+
+/*******************************************************************************
+** Section: Resume Page
+*******************************************************************************/
+/* Embedded picture of resume */
+#resumePic {
+	max-width: 100%;
+	margin: auto;
+	margin-top: 5%;
+	border: .05em solid black;
+}
+
+/* Resume download button */
+#resumeButton {
+	max-width: 50%;
+	margin: auto;
+	background-color: #1a50a1;
+}

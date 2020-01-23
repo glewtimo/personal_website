@@ -1,0 +1,157 @@
+<!-----------------------------------------------------------------------------
+-- Author: Tim Glew
+-- Description: Projects Page
+------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charet="utf-8">
+		
+		<!-- Responsive viewport meta tag required for Bootstrap -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- For font awesome icons --> 
+		<script src="https://kit.fontawesome.com/c5948be3ad.js" crossorigin="anonymous"></script>
+
+		<title>Tim Glew - Projects</title>
+
+		<!-- Bootstrap CDN -->  
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="./static/css/style.css">
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<!-----------------------------------------------------------------------------
+		-- Section: Header and Nav Bar
+		------------------------------------------------------------------------------->
+		<div id="pageHeader">
+			<div id="nameHeader">
+				Tim Glew
+			</div>
+
+			<div id="navBar">
+				<a class="navLink" href="./index.html">Home</a>
+				<a class="navLink" href="./projects.html">Projects</a>
+				<a class="navLink" href="./resume.html">Resume</a>
+			</div>
+		</div>
+
+		<!-- Page Content -->  
+		<div id="mainDiv">
+            <!-----------------------------------------------------------------------------
+            -- Section: Personal Project Cards
+            ------------------------------------------------------------------------------->
+            <!-- Cards adapted from Bootstrap documentation: https://getbootstrap.com/docs/4.0/components/card/ -->
+            <div class="card">
+                <img class="card-img-top" src="./static/pic6.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Chess Implementation with AI (C++)</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li>Full chess game implementation playable by two human players or one human versus an AI</li>
+                            <li>The AI selects a move to make by evaluating legal moves and identifying the move that produces the most favorable board state for the AI</li>
+                            <li>The AI calculates board favorability by assigning a value representing relative strength to each piece and adjusting this value up or down based on the piece’s location on the board</li>
+                        </ul>
+                    </p>
+                    <div class="projectButton">
+                        <a href="https://github.com/glewtimo/chess_ai" class="btn btn-primary">See on Github</a>
+                    </div>
+                </div>
+            </div>    
+
+
+            <div class="card">
+                <img class="card-img-top" src="./static/pic7.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" id="libTitle">Full Stack Library Catalog (HTML, CSS, JavaScript, Node.js, Express.js, Handlebars.js, MySQL)</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li>Implemented a MySQL database with a web-based UI to track authors, books, publication editions, employees, patrons, and rentals for a fictional library
+                            <li>Records for each entity can be created and viewed through a web-based UI</li>
+                            <li>Additionally, rental entity records can be updated or deleted from the database through the UI</li>
+                            <li>Implemented a search feature that allows users to search for books based on title and/or genre</li> 
+                        </ul>
+                    </p>
+                    <div class="projectButton">
+                        <a href="https://github.com/glewtimo/Full-Stack-Library-Catalogue-Website" class="btn btn-primary">See on Github</a>
+                    </div>
+                </div>
+            </div>            
+
+            
+
+            <div class="card">
+                <img class="card-img-top" src="./static/pic5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Spell Checker (C)</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li>Implemented a case-insensitive spell checker </li>
+                            <li>Spell checker indicates if a user provided word is spelled correctly or not, and if it is spelled incorrectly, uses a Levenshtein distance calculation to provide the five closest matches</li>
+                        	<li>Includes a full hash map implementation that is used in tracking the results of Levenshtein distance calculations</li>
+                        </ul>
+                    </p>
+                    <div class="projectButton">
+                        <a href="https://github.com/glewtimo/spell_checker" class="btn btn-primary">See on Github</a>
+                    </div>
+                </div>
+            </div>            
+
+            
+            <div class="card">
+                <img class="card-img-top" src="./static/pic4.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">GoT Based Adventure Game (C++)</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li>A text-based game inspired by the Game of Thrones universe</li>
+                            <li>Players can interact with surrounding objects which are randomly generated each turn</li>
+                            <li>Interactions include picking up/using items and battling mythical creatures</li>
+                        </ul>
+                    </p>
+                    <div class="projectButton">
+                        <a href="https://github.com/glewtimo/GoT_Adventure" class="btn btn-primary">See on Github</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img-top" src="./static/pic8.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Personal Website (HTML, CSS)</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li>You're looking at it right now!!</li>
+                            <li>Static website to provide more background about myself, showcase my projects, and display my resume</li>
+                        </ul>
+                    </p>
+                    <div class="projectButton">
+                        <a href="https://github.com/glewtimo/personal_website" class="btn btn-primary">See on Github</a>
+                    </div>
+                </div>
+            </div>            
+
+            
+		</div>
+
+		<!-- Scripts to enable Bootsrap functionality  --> 
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+		<!-- My scripts --> 
+		<script src="./static/scripts.js"></script>
+	</body>
+</html>
+
+
+
+
+
